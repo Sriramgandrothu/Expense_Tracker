@@ -11,7 +11,7 @@ function Navigation({active, setActive}) {
             <div className="user-con">
                 <img src={avatar} alt="" />
                 <div className="text">
-                    <h2>Hiee User!!</h2>
+                    <h5>Hiee User!!</h5>
                     <p>Your Money</p>
                 </div>
             </div>
@@ -27,18 +27,20 @@ function Navigation({active, setActive}) {
                     </li>
                 })}
             </ul>
-            <div className="bottom-nav">
+            {/* <div className="bottom-nav">
                 <li>
                     {signout} Sign Out
                 </li>
-            </div>
+                
+                
+            </div> */}
         </NavStyled>
     )
 }
 
 const NavStyled = styled.nav`
     padding: 2rem 1.5rem;
-    width: 374px;
+    width: 200px;
     height: 100%;
     background: rgba(252, 246, 249, 0.78);
     border: 3px solid #FFFFFF;
@@ -54,8 +56,8 @@ const NavStyled = styled.nav`
         align-items: center;
         gap: 1rem;
         img{
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 5   0px;
             border-radius: 50%;
             object-fit: cover;
             background: #fcf6f9;
@@ -64,9 +66,11 @@ const NavStyled = styled.nav`
             box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
         }
         h2{
+            
             color: rgba(34, 34, 96, 1);
         }
         p{
+            font-size : 15px;
             color: rgba(34, 34, 96, .6);
         }
     }
@@ -76,6 +80,7 @@ const NavStyled = styled.nav`
         display: flex;
         flex-direction: column;
         li{
+            font-size : 15px;
             display: grid;
             grid-template-columns: 40px auto;
             align-items: center;
